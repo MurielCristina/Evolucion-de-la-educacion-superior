@@ -71,7 +71,7 @@ main {
 }
 .timeline-item:nth-child(odd) {
   left: 0;
-  text-align: right;
+  text-align: left;
 }
 .timeline-item:nth-child(even) {
   left: 50%;
@@ -81,6 +81,7 @@ main {
   font-weight: bold;
   color: var(--highlight-dark);
 }
+
 @media screen and (max-width: 768px) {
   .timeline::after {
     left: 20px;
