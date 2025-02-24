@@ -70,7 +70,7 @@ main {
   width: 45%;
 }
 .timeline-item:nth-child(odd) {
-  left: 5%;
+  left: 0;
   text-align: right;
 }
 .timeline-item:nth-child(even) {
@@ -89,5 +89,6 @@ main {
     width: 90%;
     left: 10% !important;
     text-align: left !important;
+    padding: 20px;
   }
 }
