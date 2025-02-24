@@ -48,7 +48,8 @@ main {
 }
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
+  padding: 20px 0;
 }
 .timeline::after {
   content: "";
@@ -67,14 +68,16 @@ main {
   margin: 20px 0;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  width: 45%;
+  width: 48%;
+  min-height: 180px;
 }
 .timeline-item:nth-child(odd) {
-  left: 0;
+  left: auto;
+  right: 10%;
   text-align: right;
 }
 .timeline-item:nth-child(even) {
-  left: 50%;
+  left: 52%;
   text-align: left;
 }
 .timeline-date {
