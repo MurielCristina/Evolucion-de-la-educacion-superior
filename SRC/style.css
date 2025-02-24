@@ -99,6 +99,27 @@ main {
     padding: 20px;
   }
 }
+/*Ocultar detalles por defecto*/
+.timeline-content .details {
+  display: none;
+  margin-top: 10px;
+}
+/*Botón para mostrar más detalles*/
+.show-more {
+  background: none;
+  color: var(--highlight);
+  border: solid 1px var(--highlight);
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+}
+.show-more:hover {
+  background: var(--highlight-dark);
+  color: white;
+  border: none;
+}
 
 /* Estilos del footer */
 
