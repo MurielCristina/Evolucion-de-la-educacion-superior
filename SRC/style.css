@@ -6,6 +6,8 @@
   --highlight-light: #f7895c;
   --highlight: #df603a;
   --highlight-dark: #9c4a3b;
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
 }
 
 body {
@@ -36,4 +38,56 @@ header h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-top: 10px;
+}
+
+/* Estilos de la línea de tiempo */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: var(--text-light);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 45%;
+}
+.timeline-item:nth-child(odd) {
+  left: 5%;
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+.timeline-date {
+  font-weight: bold;
+  color: var(--highlight-dark);
+}
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 90%;
+    left: 10% !important;
+    text-align: left !important;
+  }
 }
