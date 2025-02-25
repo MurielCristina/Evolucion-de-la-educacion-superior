@@ -94,7 +94,7 @@ body {
 }
 /* Estilos de la línea de tiempo */
 main {
-  display: flex;
+  display: block;
   justify-content: center;
   padding: 40px 20px;
 }
@@ -105,8 +105,12 @@ main {
 }
 .timeline {
   position: relative;
-  max-width: 900px;
-  padding: 20px 0;
+  max-width: 900px; /* Ahora igual que las otras secciones */
+  margin: 40px auto; /* Centra la línea de tiempo */
+  padding: 20px 20px;
+  background: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 .timeline::after {
   content: "";
@@ -118,23 +122,33 @@ main {
   left: 50%;
   transform: translateX(-50%);
 }
+.conclusion,
+.referencias {
+  max-width: 900px;
+  margin: 40px auto; /* Añade espacio arriba y abajo */
+  padding: 40px 20px;
+  background: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
 .timeline-item {
   position: relative;
   background: white;
   padding: 20px;
-  margin: 20px 0;
+  margin: 30px 0;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  width: 48%;
+  width: 20%;
   min-height: 180px;
 }
 .timeline-item:nth-child(odd) {
   left: auto;
-  right: 10%;
+  right: 50%;
   text-align: right;
+  transform: translateX(310%);
 }
 .timeline-item:nth-child(even) {
-  left: 52%;
+  left: 50%;
   text-align: left;
 }
 .timeline-date {
@@ -148,15 +162,31 @@ main {
 .timeline-content ol {
   text-align: left;
 }
+@media screen and (max-width: 1024px) {
+  .timeline-item {
+    width: 90%; /* Aumenta el ancho en pantallas medianas */
+    left: 5%;
+    text-align: left;
+    transform: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .timeline::after {
     left: 20px;
   }
   .timeline-item {
-    width: 90%;
-    left: 10% !important;
+    width: 80%;
+    left: 0 !important;
     text-align: left !important;
-    padding: 20px;
+    padding: 20px auto;
+    transform: none;
+  }
+  .timeline-item:nth-child(odd) {
+    left: auto;
+    right: 50%;
+    text-align: right;
+    transform: none;
   }
 }
 /*Ocultar detalles por defecto*/
@@ -266,4 +296,26 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+/* 📌 Asegurar que los ítems de descarga estén alineados a la izquierda */
+.footer-box ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-box ul li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* 📌 Responsive footer */
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    text-align: left;
+    padding: 30px;
+  }
+  .footer-box {
+    padding-bottom: 20px; /* Espaciado entre las secciones */
+  }
 }
