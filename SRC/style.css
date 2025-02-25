@@ -215,8 +215,8 @@ main {
 
 /* Botón para mostrar el pop-up */
 .show-panama {
-  background: var(--highlight);
-  color: white;
+  background: none;
+  color: var(--highlight);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -226,7 +226,8 @@ main {
 }
 
 .show-panama:hover {
-  background: var(--highlight-dark);
+  background: #f7885c76;
+  color: var(--highlight-dark);
 }
 
 /* Estilos del footer */

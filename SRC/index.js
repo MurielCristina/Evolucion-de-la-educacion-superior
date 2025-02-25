@@ -31,17 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const panamaData = {
     antiguedad:
-      "En este período no se registran instituciones formales en Panamá, ya que la educación indígena se transmitía de manera oral y práctica dentro de las comunidades.",
+      "Durante la Antigüedad, en Panamá no existían instituciones formales de educación. La enseñanza era oral y se transmitía dentro de las comunidades indígenas, enfocada en habilidades prácticas, conocimientos ancestrales y valores culturales.",
     edadMedia:
-      "Las primeras formas de educación en Panamá fueron establecidas por órdenes religiosas como los agustinos y jesuitas en los siglos XVI y XVII.",
+      "Durante la Edad Media, las primeras formas de educación en Panamá fueron introducidas por órdenes religiosas como los agustinos y jesuitas en los siglos XVI y XVII. Se establecieron colegios religiosos que ofrecían enseñanza en gramática, filosofía y teología.",
     renacimiento:
-      "Se fundaron colegios en Panamá, como el Colegio de San Agustín (1607) y el Colegio de San Ignacio de Loyola (1612), que ofrecían educación religiosa y humanística.",
+      "En el siglo XVII, se fundaron colegios en Panamá, como el Colegio de San Agustín (1607) y el Colegio de San Ignacio de Loyola (1612), dirigidos por órdenes religiosas. Estas instituciones impartían educación humanística y religiosa, sentando las bases de la educación formal en el Istmo.",
     revolucionIndustrial:
-      "En 1909 se fundó el Instituto Nacional de Panamá, considerado un hito en la educación del país.",
+      "Durante la Revolución Industrial, Panamá experimentó avances en la educación con la creación de instituciones clave. En 1909, se fundó el Instituto Nacional de Panamá, considerado el 'Nido de Águilas' y una de las instituciones educativas más prestigiosas del país.",
     sigloXX:
-      "En 1935 se creó la Universidad de Panamá, la primera universidad estatal del país, marcando un avance en la educación superior.",
+      "En el siglo XX, la educación superior en Panamá tuvo un crecimiento significativo. En 1935, se creó la Universidad de Panamá, la primera universidad estatal del país. Posteriormente, en 1981, se fundó la Universidad Tecnológica de Panamá, especializada en ingeniería y tecnología.",
     sigloXXI:
-      "Se expandieron las universidades privadas y creció la educación en línea en Panamá.",
+      "El siglo XXI trajo consigo la expansión de universidades privadas y el crecimiento de la educación en línea en Panamá. Desde 2005, varias instituciones comenzaron a ofrecer programas virtuales, facilitando el acceso a la educación superior en todo el país.",
   };
 
   // Asegurar que el modal esté oculto al cargar la página
